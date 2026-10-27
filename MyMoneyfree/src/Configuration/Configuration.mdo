@@ -50,6 +50,7 @@
   <catalogs>Catalog.События</catalogs>
   <documents>Document.ПоступлениеДенег</documents>
   <documents>Document.РасходДенег</documents>
+  <documents>Document.НакоплениеДенег</documents>
   <enums>Enum.Пол</enums>
   <reports>Report.Затраты</reports>
   <reports>Report.СколькоДенег</reports>

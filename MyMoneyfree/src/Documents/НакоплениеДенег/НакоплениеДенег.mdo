@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="dbc8f2e4-8a31-4455-8073-559d51daa7b8">
+  <producedTypes>
+    <objectType typeId="e8e2ce82-9207-4a5e-8b31-e0c6bec5230c" valueTypeId="ff36b339-a4f1-4870-aed8-751bbc873f8a"/>
+    <refType typeId="6548cc77-ec45-4c69-bb20-649e1c3013d7" valueTypeId="3baa279c-a1f9-46d6-a39f-73a2fe912c11"/>
+    <selectionType typeId="ea22206b-711e-41eb-835d-fd27c5291593" valueTypeId="af9e653a-a4ae-4a1a-ba7d-b94c2420e123"/>
+    <listType typeId="af971a25-7e05-44db-91e1-299ef7722c7b" valueTypeId="ec4262de-9fc9-4ad9-b5cc-a4ca17e6bfdc"/>
+    <managerType typeId="de59737e-0a76-42c2-8cbc-7fcdbaf22fd4" valueTypeId="ccd6c064-66ca-4f96-8f8b-3f48765925e8"/>
+  </producedTypes>
+  <name>НакоплениеДенег</name>
+  <synonym>
+    <key>ru</key>
+    <value>Накопление денег</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.НакоплениеДенег.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <numberType>String</numberType>
+  <numberLength>9</numberLength>
+  <numberAllowedLength>Variable</numberAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <postInPrivilegedMode>true</postInPrivilegedMode>
+  <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
+  <tabularSections uuid="c6ee1ba6-d7f7-49e0-a520-9bfbc8877f27">
+    <producedTypes>
+      <objectType typeId="8c9e2be7-9b32-4422-8107-56966ab2008a" valueTypeId="228d5402-fdee-4029-8e79-a7ec9440e72f"/>
+      <rowType typeId="ff2a1cca-c2af-4be5-912c-6ff427482b7b" valueTypeId="ac73c6a9-266e-47b9-b43a-19bf19049baf"/>
+    </producedTypes>
+    <name>Накопления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Накопления</value>
+    </synonym>
+    <attributes uuid="a084870c-3b71-4a00-93a5-6f9827c843b5">
+      <name>Событие</name>
+      <synonym>
+        <key>ru</key>
+        <value>Событие</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.События</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="603a4e37-b0be-46ac-8cb2-c5e2d35b2360">
+      <name>Друг</name>
+      <synonym>
+        <key>ru</key>
+        <value>Друг</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.Друзья</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="994e745d-b538-443f-8c4a-31902b204c83">
+      <name>Сумма</name>
+      <synonym>
+        <key>ru</key>
+        <value>Сумма</value>
+      </synonym>
+      <type>
+        <types>Number</types>
+        <numberQualifiers>
+          <precision>10</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>
